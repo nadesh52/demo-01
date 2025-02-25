@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const HeroSection = () => {
@@ -6,9 +7,11 @@ const HeroSection = () => {
       id="home"
       className="relative flex min-h-[90vh] items-center justify-center"
     >
-      <img
+      <Image
         src="assets/images/workbg.png"
         alt="Background"
+        width={1000}
+        height={667}
         className="absolute inset-0 h-full w-full object-cover object-center select-none pointer-events-none"
       />
       <div className="relative z-10">
