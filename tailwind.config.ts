@@ -19,7 +19,7 @@ export default {
         xs: '426px'
       },
       backgroundImage: {
-        'workbg': "url('assets/images/workbg.jpg')",
+        'workbg': "url('/assets/images/workbg.png')",
       },
     },
   },
