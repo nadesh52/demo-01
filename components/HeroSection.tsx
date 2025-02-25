@@ -9,7 +9,7 @@ const HeroSection = () => {
       </div>
       <div className="relative z-0 flex flex-col items-center justify-center gap-2 px-4 text-center text-white">
         <h1 className="text-5xl font-bold">
-          Transform Your Vision into Reality5
+          Transform Your Vision into Reality6
         </h1>
         <h4 className="text-xl">
           สร้างเว็บไซต์ที่เร็ว แรง และตอบโจทย์ธุรกิจของคุณ
