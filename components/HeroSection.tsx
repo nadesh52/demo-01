@@ -3,7 +3,7 @@ import React from "react";
 const HeroSection = () => {
   return (
     <section id="home" className="relative flex min-h-[90vh] items-center justify-center">
-      <div className="absolute inset-0 bg-[url('assets/images/workbg.webp')] bg-cover bg-center bg-no-repeat">
+      <div className="absolute inset-0 bg-workbg bg-cover bg-center bg-no-repeat">
         {/* Overlay */}
         <div className="absolute inset-0 bg-primary/80"></div>
       </div>

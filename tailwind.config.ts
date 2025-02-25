@@ -17,7 +17,10 @@ export default {
       },
       screens: {
         xs: '426px'
-      }
+      },
+      backgroundImage: {
+        'workbg': "url('assets/images/workbg.jpg')",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")],
