@@ -23,7 +23,7 @@ const Contact = () => {
         <div className="w-[370px] place-self-center sm:mt-0 mt-8">
           <Image
             src="assets/images/map.jpg"
-            height={0}
+            height={384}
             width={384}
             alt="map"
           />
