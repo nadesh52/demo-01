@@ -6,15 +6,15 @@ const nextConfig: NextConfig = {
   output: isProd ? "export" : "standalone",
   basePath: "/demo-01",
   assetPrefix: "/demo-01",
-  // images: {
-  //   unoptimized: true,
-  //   remotePatterns: [
-  //     {
-  //       protocol: "https",
-  //       hostname: "**",
-  //     },
-  //   ],
-  // },
+  images: {
+    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
