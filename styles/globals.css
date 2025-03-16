@@ -1,21 +1,54 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap")
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-.testimonial-box {
-  @apply flex min-h-36 min-w-64 flex-col gap-4 rounded-md p-4 shadow;
+@plugin 'tailwind-scrollbar';
+
+@theme {
+  --color-background: #f8fafc;
+  --color-primary: #2563eb;
+  --color-secondary: #1e293b;
+  --color-accent: #facc15;
+  --color-accent-hover: #f8d900;
+
+  --breakpoint-xs: 426px;
+
+  --background-image-workbg: url("/assets/images/workbg.png");
 }
 
-.feature-box {
-  @apply flex w-full flex-row items-center gap-4 rounded-md bg-white p-4 shadow sm:w-52 sm:flex-col sm:transition-all sm:hover:scale-110;
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 }
 
-.cta {
-  @apply w-fit rounded-full bg-accent px-8 py-2 text-lg font-medium text-black hover:bg-accent-hover;
-}
+@layer components {
+  .testimonial-box {
+    @apply flex min-h-36 min-w-64 flex-col gap-4 rounded-md p-4 shadow-sm;
+  }
 
-.mobilemenu-link {
-  @apply text-lg block hover:translate-x-2 transition-all hover:text-primary
+  .feature-box {
+    @apply flex w-full flex-row items-center gap-4 rounded-md bg-white p-4 shadow-sm sm:w-52 sm:flex-col sm:transition-all sm:hover:scale-110;
+  }
+
+  .cta {
+    @apply bg-accent hover:bg-accent-hover w-fit rounded-full px-8 py-2 text-lg font-medium text-black;
+  }
+
+  .mobilemenu-link {
+    @apply hover:text-primary block text-lg transition-all hover:translate-x-2;
+  }
 }
