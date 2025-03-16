@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-10 flex h-[8vh] items-center justify-between bg-white/70 px-6 text-secondary shadow-md backdrop-blur-[6px] sm:h-[10vh]">
+    <nav className="sticky top-0 z-50 flex h-[8vh] items-center justify-between bg-white/70 px-6 text-secondary shadow-md backdrop-blur-[6px] sm:h-[10vh]">
       {/* Logo */}
       <div className="z-50 select-none text-xl font-bold">
         <a href="#home" onClick={handleScroll}>
